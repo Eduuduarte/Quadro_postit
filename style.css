@@ -1,0 +1,86 @@
+body{
+    box-sizing: border-box;
+    margin: 0;
+    background-color: black;
+}
+/* ***** Cabeçalho ***** */
+header{
+    display: flex;
+    justify-content: center;
+    height: 5%;
+}
+
+header h1{
+    color: #FFF;
+    font-size: 50px;
+}
+/* ***** Quadro ***** */
+.all-round{
+    display: flex;
+}
+
+.square{
+    display: flex;
+    text-align: center;
+    flex-direction: row;
+    justify-content: space-around;
+    flex: 1;
+    height: auto;
+    margin: 5px;
+}
+
+.area{
+    display: flex;
+    flex-wrap: wrap;
+    flex: 1;
+    height: 95%;
+    justify-content: space-around;
+}
+
+.area textarea{
+    width: 170px;
+    height: 170px;
+    background-color: #FFFF00;
+}
+
+.do{
+    width: 370px;
+    color: #FFF;
+}
+
+.doing{
+    width: 370px;
+    color: #FFF;
+}
+
+.done{
+    width: 370px;
+    color: #FFF;
+}
+
+/* ***** Area do bloco de notas ***** */
+.blocks{
+    width: 180px;
+    margin: 10px;
+    text-align: center;
+}
+
+.blocks textarea{
+    width: 170px;
+    height: 170px;
+    background-color: #FFFF00;
+}
+
+textarea{
+    font-size: 20px;
+}
+
+/* ***** Eventos ***** */
+.hover{
+    background-color: #D3D3D3;
+}
+
+.blocks textarea.dragging{
+    opacity: 0.5;
+}
+
