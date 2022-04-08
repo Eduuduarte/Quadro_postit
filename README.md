@@ -1,5 +1,7 @@
-![Post-It](image/post-its.jpeg)
 # Task Frame (Quadro de tarefas)
+
+![Post-It](image/post-its.jpeg)
+
 
 <h4 align="center">
 ✏️ Readme it is in development...✏️
