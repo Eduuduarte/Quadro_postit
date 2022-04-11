@@ -21,10 +21,12 @@
 
 ### The Project
 
+##### HTML
 ~~~html
 <textarea name="" class="post-it color-Amarelo" cols="30" rows="10" draggable="true"></textarea>
 ~~~
 
+##### Javascript
 ~~~javascript
 document.querySelector('.post-it').addEventListener('dragstart', dragstart);
 document.querySelector('.post-it').addEventListener('dragend', dragend);
