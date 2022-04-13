@@ -23,7 +23,6 @@ document.querySelectorAll('.area').forEach(area =>{
 
 
 function dragstart(e){
-    console.log("ok")
     e.currentTarget.classList.add('dragging');
 }
 
@@ -42,12 +41,14 @@ function dragleave(e){
 
 function drop(e){
         elemento = document.querySelector('.blocks textarea');
-        console.log(elemento);        
+        console.log(elemento.classList.value);        
         let x = document.querySelector('.dragging');
         console.log(x);
         e.currentTarget.appendChild(x);
         e.currentTarget.classList.remove('hover');
-        testar();
+        if(elemento.classList.value === `post-it ${corClass} dragging`){
+            testar();
+        }
 }
 
 function testar(){
