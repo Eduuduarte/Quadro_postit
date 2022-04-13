@@ -30,4 +30,25 @@
 ~~~javascript
 document.querySelector('.post-it').addEventListener('dragstart', dragstart);
 document.querySelector('.post-it').addEventListener('dragend', dragend);
+
+document.querySelectorAll('.area').forEach(area =>{
+    area.addEventListener('dragover', dragover);
+    area.addEventListener('dragleave', dragleave);
+    area.addEventListener('drop', drop);
+});
+~~~
+
+In the events "drastart" and "dragend", you can adding class to follow the movement.
+For example:
+
+##### Javascript
+~~~javascript
+function dragstart(e){
+    e.currentTarget.classList.add('dragging');
+}
+
+function dragend(e){
+    e.currentTarget.classList.remove('dragging');
+}
+});
 ~~~
